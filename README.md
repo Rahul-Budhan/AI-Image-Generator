@@ -2,7 +2,10 @@
 
 This is a simple image generator built with Node.js and Express that uses [OpenAI's Dall-E models](https://beta.openai.com/docs/guides/images) to generate images.
 
-<img src="public/img/screen.png" width="500">
+<img src="public/Capture.PNG" width="500">
+
+<img src="public/2.PNG" width="500">
+
 
 ## Usage
 
