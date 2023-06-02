@@ -1,43 +1,27 @@
 # OpenAI Image Generator
-This project utilizes OpenAI's powerful image generation capabilities through their API. The API key and port number are extracted from a .env file. The project consists of a frontend created using HTML, CSS, and JavaScript, and a backend implemented in JavaScript.
 
-## Prerequisites
-OpenAI API Key: Obtain an API key from OpenAI to access the image generation functionality.
-Node.js: Install Node.js to run the backend server.
-'''Installation
-Clone the repository:
+This is a simple image generator built with Node.js and Express that uses [OpenAI's Dall-E models](https://beta.openai.com/docs/guides/images) to generate images.
 
-shell
-Copy code
-git clone https://github.com/your-username/openai-image-generator.git
-cd openai-image-generator'''
+<img src="public/img/screen.png" width="500">
 
-''''Install the dependencies:
+## Usage
 
-shell
-Copy code
-npm install '''
-Create a .env file in the project root directory and add the following environment variables:
+Rename the `example.env` file to `.env`.
 
-'''shell
-Copy code
-API_KEY=your_openai_api_key
-PORT=your_port_number'''
-Usage
-Start the backend server:
+Generate an API KEY at [OpenAI](https://beta.openai.com/) and add it to the `.env` file.
 
-'''shell
-Copy code
-npm run dev'''
+Install the dependencies
 
-Access the frontend:
-Open your web browser and navigate to http://localhost:your_port_number (replace your_port_number with the port number you specified in the .env file).
+```bash
+npm install
+```
 
-Use the web interface to interact with the OpenAI image generator.
+Run server
 
-## Project Structure
-public/ : Contains the frontend HTML, CSS, and JavaScript files.
-src/ : Contains the backend JavaScript files.
-src/server.js : Entry point for the backend server.
-.env : Environment variable configuration file.
+```bash
+npm start
+```
 
+Visit `http://localhost:5000` in your browser.
+
+The endpoint is at `POST http://localhost:5000/openai/generateimage`.
